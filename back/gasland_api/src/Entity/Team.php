@@ -19,7 +19,7 @@ class Team
     private ?string $name = null;
 
     #[ORM\Column]
-    private ?int $points_limit = null;
+    private ?int $pointsLimit = null;
 
     public function getId(): ?int
     {
@@ -40,13 +40,14 @@ class Team
 
     public function getPointsLimit(): ?int
     {
-        return $this->points_limit;
+        return $this->pointsLimit;
     }
 
-    public function setPointsLimit(int $points_limit): self
+    public function setPointsLimit(int $pointsLimit): self
     {
-        $this->points_limit = $points_limit;
+        $this->pointsLimit = $pointsLimit;
 
         return $this;
     }
+
 }
